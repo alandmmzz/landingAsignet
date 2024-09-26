@@ -138,6 +138,7 @@ main {
   line-height: 14px;
   border: none;
   transition: 0.4s;
+  line-height: normal;
 }
 .btn-primary:hover {
   background-color: var(--color-primary);
@@ -155,6 +156,7 @@ main {
   line-height: 14px;
   border: none;
   transition: 0.4s;
+  line-height: normal;
 }
 .btn-secondary:hover {
   background-color: var(--color-secondary);
