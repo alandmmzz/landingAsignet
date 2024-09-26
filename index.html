@@ -8,30 +8,33 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   <link rel="shortcut icon" href="" type="image/x-icon" />
   <link rel="stylesheet" href="./css/style.css" />
-  <title>Nirvana</title>
+  <title>Asignet</title>
 </head>
 
 <body class="bg-light">
   <!-- HEADER -->
   <header class="sticky-top bg-light">
     <div class="row h-100 m-0 d-flex align-items-center">
-      <div class="col-2 d-flex justify-content-center">
+      <div class="col-3 d-flex justify-content-center">
         <img height="40px" width="25px" src="/assets/img/asignet-logo.png" alt="">
       </div>
-      <div class="col-8 d-flex justify-content-center gap-5">
+
+      <div class="col-6 d-none d-md-flex justify-content-center gap-5">
         <a class="navItem" href="#">Product</a>
         <a class="navItem" href="#">Solutions</a>
         <a class="navItem" href="#">About</a>
       </div>
-      <div class="col-2 d-none">
-        <button class="btn btn-light rounded me-2 d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+      
+      <div class="col-7 col-md-3 d-flex justify-content-end justify-content-md-center">
+        <button class="btn btn-primary rounded-3" type="button">Request a demo</button>
+      </div>
+
+      <div class="col-2 d-md-none">
+        <button class="btn btn-light rounded me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
           </svg>
         </button>
-      </div>
-      <div class="col-2">
-        <button class="btn btn-primary rounded-3" type="button">Request a demo</button>
       </div>
     </div>
   </header>
@@ -79,37 +82,23 @@
         <div class="d-flex justify-content-start gap-3">
           <span class="fs-3">Trusted by the World’s largest Organizations</span>
         </div>
-        <div id="carouselTwo" class="d-flex carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselTwo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="mainTitle carousel-inner">
+        <div id="carouselTwo" class="d-md-none carousel slide mt-5 mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./assets/images/main/registros-akashicos.webp" class="d-block rounded-3 w-100" />
-              <div class="card-img-overlay">
-                <p class="card-title shadow fs-4 fw-bold p-2 p-sm-3">Registros Akashicos</p>
-                <p class="card-text d-none fs-5 d-md-block p-3">Canalizamos tus guías, maestros y amados, para darte la mayor información sobre tus conflictos, bloqueos y liberarlos.</p>
+              <div class="d-flex justify-content-center gap-5">
+                <img src="./assets/img/coca-cola-logo.png" class="rounded-3 w-25" />
+                <img src="./assets/img/HSBC-logo.png" class="rounded-3 w-25" />
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="./assets/images/main/meditacion-guiada.webp" class="d-block rounded-3 w-100" />
-              <div class="card-img-overlay">
-                <p class="card-title shadow fs-4 fw-bold p-2 p-sm-3">Meditaciones guiadas</p>
-                <p class="card-text d-none fs-5 d-md-block p-3">Para tu paz, tranquilidad y concentración. Logramos el equilibrio emocional y espiritual.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/main/constelacion-guiada.webp" class="d-block rounded-3 w-100" />
-              <div class="card-img-overlay">
-                <p class="card-title shadow shadow fs-4 fw-bold p-2 p-sm-3">Constelaciones familiares</p>
-                <p class="card-text d-none fs-5 d-md-block p-3">Conexión inmediata con tu árbol genealógico, para entender tus mayores traumas y poder solucionarlos.</p>
+            <div class="carousel-item gap-5">
+              <div class="d-flex justify-content-center gap-5">
+                <img src="./assets/img/scjohnson-logo.png" class="rounded-3 w-25" />
+                <img src="./assets/img/danfoss-logo.png" class="rounded-3 w-25" />
               </div>
             </div>
           </div>
         </div>
-        <div class="row d-flex justify-content-center align-items-center gap-5 mt-5 mb-5">
+        <div class="d-none d-md-flex row justify-content-center align-items-center gap-5 mt-5 mb-5">
           <img src="./assets/img/coca-cola-logo.png" class="partner-logo col-2 rounded" />
           <img src="./assets/img/HSBC-logo.png" class="partner-logo col-2 rounded" />
           <img src="./assets/img/scjohnson-logo.png" class="partner-logo col-2 rounded" />
@@ -201,29 +190,29 @@
         <li class="list-group-item d-flex justify-content-between disabled">Home
           <a class="text-reset" href="./index.html"></a>
         </li>
-        <li class="list-group-item d-flex justify-content-between">Agendate ya
-          <a class="text-reset" href="./pages/schedule.html">
+        <li class="list-group-item d-flex justify-content-between">Product
+          <a class="text-reset" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
             </svg>
           </a>
         </li>
-        <li class="list-group-item d-flex justify-content-between">Quienes somos
-          <a class="text-reset" href="./pages/information.html">
+        <li class="list-group-item d-flex justify-content-between">Solutions
+          <a class="text-reset" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
             </svg>
           </a>
         </li>
-        <li class="list-group-item d-flex justify-content-between">Tienda online
-          <a class="text-reset" href="./pages/onlineShop.html">
+        <li class="list-group-item d-flex justify-content-between">About
+          <a class="text-reset" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
             </svg>
           </a>
         </li>
-        <li class="list-group-item d-flex justify-content-between">Contacto
-          <a class="text-reset" href="./pages/contact.html">
+        <li class="list-group-item d-flex justify-content-between">Request a demo
+          <a class="text-reset" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
             </svg>
@@ -237,47 +226,5 @@
     
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script>
-    const wordContainer = document.getElementById('word-container');
-    const words = wordContainer.querySelectorAll('p');
-    let currentIndex = 0;
- 
-    function updateOpacities() {
-        // Resetear todas las palabras a `side`
-        words.forEach((word) => word.classList.remove('middle', 'side'));
- 
-        // Actualizar las clases para la palabra actual, anterior y siguiente
-        words[currentIndex].classList.add('middle');  // La palabra del centro
-        words[(currentIndex - 1 + words.length) % words.length].classList.add('side');  // Palabra de arriba
-        words[(currentIndex + 1) % words.length].classList.add('side');  // Palabra de abajo
-    }
- 
-    function changeWord() {
-        // Deslizar hacia arriba
-        wordContainer.style.transition = 'transform 1s ease-in-out';
-        wordContainer.style.transform = `translateY(-${(currentIndex + 1) * 30}px)`; // Desliza hacia arriba
- 
-        // Después de 1 segundo (cuando termina la transición), verificar si reiniciar
-        setTimeout(() => {
-            currentIndex++;
- 
-            // Si llegamos al final del ciclo (posición del duplicado), reiniciar sin transición
-            if (currentIndex >= 3) {
-                wordContainer.style.transition = 'none';  // Eliminar transición
-                wordContainer.style.transform = 'translateY(0)';  // Resetear a la posición original
-                currentIndex = 0;  // Reiniciar el índice
-            }
- 
-            // Actualizar opacidades de las palabras
-            updateOpacities();
-        }, 1000); // La transición dura 1 segundo
-    }
- 
-    // Iniciar con la configuración inicial
-    updateOpacities();
- 
-    // Cambiar la palabra cada 3 segundos
-    setInterval(changeWord, 3000);
-</script>
 </body>
 </html>
