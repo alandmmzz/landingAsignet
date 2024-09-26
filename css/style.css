@@ -25,7 +25,7 @@
 
 header {
     background-color: #fff;
-    margin: 30px 0px;
+    margin: 0;
     padding: 0;
     height: 85px;
 
@@ -190,4 +190,13 @@ main {
   .hw-65 {
     height: 65px;
     width: 65px;
+  }
+
+  img {
+    mix-blend-mode: multiply;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: var(--bs-body-color)
   }
