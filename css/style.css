@@ -32,11 +32,15 @@ header {
   margin: 0;
   padding: 0;
   height: 85px;
-  div {
-    height: 65px;
+  > div {
+    padding-top: 20px;
     background-color: transparent;
     @media (max-width: 768px) {
       background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+      padding-top: 0px;
+    }
+    > div {
+      min-height: 65px;
     }
   }
 }
