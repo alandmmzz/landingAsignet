@@ -17,6 +17,7 @@
   --color-primary: #4C507B;
 
   --color-secondary: #DDE0FC;
+  --bs-light-rgb: #ff0000 !important;
 }
 
 * {
