@@ -170,17 +170,18 @@ main {
   div {
     display: flex;
     align-items: center;
-    height: 80px;
-    min-width: 80px;
+    height: 100px;
+    min-width: 100px;
     transition: 0.4s;
-    p {
+    a {
       margin: 0 auto;
+      cursor: pointer;
     }
   }
 }
 
 .activeCarousel {
-  background: radial-gradient(circle at center, #BCBFE2 0%, rgba(242, 242, 242, 0) 40px);
+  background: radial-gradient(circle at center, #BCBFE2 0%, rgba(242, 242, 242, 0) 50px);
   transition: 0.4s;
 
 }
