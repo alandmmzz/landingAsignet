@@ -17,6 +17,7 @@
   --color-primary: #4C507B;
 
   --color-secondary: #DDE0FC;
+  --bs-light-rgb: #ff0000 !important;
 }
 
 * {
@@ -176,6 +177,10 @@ main {
     a {
       margin: 0 auto;
       cursor: pointer;
+      transition: 0.1s;
+    }
+    a:hover {
+      opacity: 0.8;
     }
   }
 }
