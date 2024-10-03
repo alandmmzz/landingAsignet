@@ -76,7 +76,7 @@ main {
   line-height: 36px;
   display: flex;
   background: -webkit-linear-gradient(45deg,rgba(139,146,225,1) 0%, rgba(188,191,226,1) 15%);
-  -webkit-background-clip: text;
+  /*-webkit-background-clip: text;*/
   -webkit-text-fill-color: transparent;
 }
 

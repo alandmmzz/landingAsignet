@@ -14,12 +14,28 @@
 <body class="bg-light">
 
   <!-- HEADER -->
-  <header class="sticky-top mt-5">
-    <div class="h-100 row m-0 d-flex align-items-center justify-content-between justify-content-md-center gap-5">
-      <div class="hw-65 col-6 col-md-2 d-flex justify-content-center align-items-center rounded-circle bg-light boxShadow-01 ms-5">
-        <a href="#">
-          <img height="40px" width="auto" src="/assets/img/asignet-logo.png" alt="Asignet logo">
-        </a>
+  <header class="sticky-top">
+    <div class="gradient-01 pb-4">
+      <div class="row m-0 d-flex align-items-center justify-content-between justify-content-md-center gap-5">
+
+        
+        <div class="d-none col-auto d-md-flex justify-content-center align-items-center gap-5 ps-lg-5 pe-lg-5 bg-light boxShadow-01 rounded-3 p-4">
+          <button class="navItem btn btn-light rounded-3" type="button">
+            <img height="40px" width="auto" src="/assets/img/asignet-logo.png" alt="Asignet logo">
+          </button>
+          <button class="navItem btn btn-light rounded-3" type="button">Product</button>
+          <button class="navItem btn btn-light rounded-3" type="button">Solutions</button>
+          <button class="navItem btn btn-light rounded-3" type="button">About</button>
+          <button class="navItem btn btn-secondary rounded-3" type="button">Request a demo</button>
+        </div>
+        
+        <div class="d-md-none d-flex justify-content-end">
+          <button class="btn btn-light boxShadow-01 rounded-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+        </div>
       </div>
   </div>
   </header>
@@ -44,8 +60,7 @@
               <p class="word-carousel-item">hardware</p>
               <!-- Duplicamos las palabras para crear el efecto continuo -->
               <p class="word-carousel-item">cloud</p>
-              <p class="word-carousel-item">mobile</p>   
-              <p class="word-carousel-item">software</p>
+              <p class="word-carousel-item">mobile</p>   <p class="word-carousel-item">software</p>
               <p class="word-carousel-item">hardware</p>
           </div>
       </span>
@@ -116,9 +131,9 @@
     <div class="row d-flex justify-content-center w-100">
       <div class="col-10">
         <div id="word-emphasis-carousel" class="d-flex justify-content-start gap-5">
-          <div class="fs-3 activeCarousel text-center"><a data-bs-target="#carouselOne" data-bs-slide-to="0">Cut Costs.</a></div>
-          <div class="fs-3 text-secondary text-center"><a data-bs-target="#carouselOne" data-bs-slide-to="1">Manage your payments.</a></div>
-          <div class="fs-3 text-secondary text-center"><a data-bs-target="#carouselOne" data-bs-slide-to="2">Better.</a></div>
+          <div class="fs-3 activeCarousel text-center"><p>Cut Costs.</p></div>
+          <div class="fs-3 text-secondary text-center"><p>Manage your payments.</p></div>
+          <div class="fs-3 text-secondary text-center"><p>Better.</p></div>
         </div>
         <div id="carouselOne" class="carousel slide mt-3" data-bs-ride="carousel">
           <div class="mainTitle carousel-inner">
