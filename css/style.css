@@ -171,6 +171,10 @@ main {
     a {
       margin: 0 auto;
       cursor: pointer;
+      transition: 0.1s;
+    }
+    a:hover {
+      opacity: 0.8;
     }
   }
 }
