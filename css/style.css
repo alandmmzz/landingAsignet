@@ -270,8 +270,8 @@ main {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
-  height: 20px;
+  height: 15px;
+  width: 15px;
   padding: 0;
   margin-right: 5px;
   margin-left: 5px;
@@ -285,11 +285,10 @@ main {
   opacity: 0.8;
   transition: .6s ease;
   border-radius: 27px !important;
-  width: 20px;
 }
 .carousel-indicators .active {
   opacity: 1;
-  width: 40px;
+  width: 29px;
 }
 
 .logosCertificacion {
