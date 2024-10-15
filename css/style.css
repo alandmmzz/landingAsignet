@@ -27,20 +27,15 @@ main > div {
 }
 
 header {
-  background-color: transparent;
   margin: 0;
   padding: 0;
   > div {
-    padding-top: 20px;
-    background-color: transparent;
-    @media (max-width: 768px) {
       background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
       padding-top: 0px;
     }
     > div {
-      min-height: 65px;
+      min-height: 60px;
     }
-  }
 }
 
 img {
@@ -154,11 +149,9 @@ main {
 }
 
 .boxShadow-01 {
-  @media (min-width: 768px) {
     box-shadow: -1px 3px 5px 1px #0000000a;
     -webkit-box-shadow: -1px 3px 5px 1px #0000000a;
     -moz-box-shadow: -1px 3px 5px 1px #0000000a;
-  }
 }
 
 /* EMPHASIS WORDS CAROUSEL */
@@ -220,7 +213,7 @@ main {
 }
 
 .btn-primary {
-  padding: 13px;
+  padding: 14px 24px 11px;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   font-size: 14px;
@@ -238,7 +231,7 @@ main {
 }
 
 .btn-secondary {
-  padding: 13px;
+  padding: 14px 24px 11px;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   font-size: 14px;
@@ -256,6 +249,7 @@ main {
 }
 
 .btn-light {
+  padding: 14px 24px 11px;
   background-color: #FCFCFC !important;
   border: none;
   transition: 0.4s;
