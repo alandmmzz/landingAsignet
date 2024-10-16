@@ -300,7 +300,31 @@ $blank_description = get_bloginfo( 'description', 'display' );
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/carousel.js">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('#carouselOne');
+        const divs = document.querySelectorAll('#word-emphasis-carousel div');
+
+        // Función para actualizar las clases de los spans según el slide activo
+        const updateSpans = (activeIndex) => {
+            divs.forEach((div, index) => {
+                if (index === activeIndex) {
+                    div.classList.add('activeCarousel');
+                    div.classList.remove('text-secondary');
+                } else {
+                    div.classList.remove('activeCarousel');
+                    div.classList.add('text-secondary');
+                }
+            });
+        };
+
+        // Escuchar el evento 'slid.bs.carousel' para detectar el cambio de diapositiva
+        carousel.addEventListener('slid.bs.carousel', function(event) {
+            const activeIndex = event.to; // Obtiene el índice de la diapositiva activa
+            updateSpans(activeIndex);
+        });
+      });
+    </script>
 
   </body>
 </html>
