@@ -229,23 +229,30 @@ $blank_description = get_bloginfo( 'description', 'display' );
       </div>
 
       <!-- Fifth row -->
-      <div class="row d-flex justify-content-center w-100">
-        <div class="col-10">
-          <p class="fs-2 fw-bold gradientTitle mt-5 mb-2">
-            Special Offer!
-          </p>
-          <p class="fs-5 mb-1">
-            Get a fully functional  Proof of Concept, <strong>on us.</strong> 😉
-          </p>
-          <p class="fs-5 mb-3">
-            You can try it out while <strong>still maintaining your current platform.</strong>
-          </p>
-          <div class="boxShadow-01">
-            <img class="rounded w-100"  src="<?php echo get_template_directory_uri();?>/assets/img/dog.webp">
-          </div>
+    <div class="row d-flex justify-content-center w-100">
+      <div class="col-10 d-flex align-items-center flex-column">
+        <p class="text-form-left fs-1 mb-1">
+          Get a fully Functional Prototype, <strong>on us.</strong> 😉
+        </p>
+        
+        <div class="boxShadow-01 w-50 rounded-4 p-3 pe-xl-5 ps-xl-5">
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js">
+          </script>
+          <script>
+            hbspt.forms.create({
+            region: "na1",
+            portalId: "21312851",
+            formId: "0bf31266-670f-4074-b893-49ea06d6e989"
+          });
+          </script>
+        
         </div>
+        <p class="text-form-right fs-1 mb-3">
+          Try it out while still maintaining your current platform.
+        </p>
       </div>
-    </main>
+    </div>
+  </main>
 
     <!-- OFF CANVAS HEADER -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasHeader" aria-labelledby="#offcanvasHeader">
